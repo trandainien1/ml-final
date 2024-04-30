@@ -65,7 +65,7 @@ if st.button("Generate Images"):
         # st.image(example_image, caption='Example Image', use_column_width=True)
         # img_bytes = pil_to_bytes(example_image)
         # st.download_button(label=f"Download Image ", data=img_bytes, file_name=f"generated_image_example.png", mime='image/png')
-        pipe = pipe.to('cuda')
+        # pipe = pipe.to('cuda')
 
         with st.spinner('Generating...'):
             image = pipe(
